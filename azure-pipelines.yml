@@ -24,5 +24,6 @@ steps:
     goals: 'package'
 - task: Docker@2
   inputs:
+    repository: 'anmol1904/sample-repo:tagname'
     command: 'build'
     Dockerfile: '**/Dockerfile'
